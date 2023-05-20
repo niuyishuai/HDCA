@@ -21,7 +21,7 @@ See the article [here](https://arxiv.org/abs/2301.09098) for more details about 
 ## Citation
 
 ```
-@Misc{niu2023BDCASEiCP,
+@Misc{niu2023HDCA,
 	title = {Accelerated DC Algorithms for the Asymmetric Eigenvalue Complementarity Problem},
 	author = {Yi-Shuai Niu},	
 	year = {2023}
