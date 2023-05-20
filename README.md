@@ -30,14 +30,14 @@ See the article [here](https://arxiv.org/abs/2301.09098) for more details about 
 
 ## Dependencies
 
-This toolbox depends on MOSEK for solving the linear and quadratic convex subproblems.
+This toolbox depends on `MOSEK` for solving the linear and quadratic convex subproblems.
 
-The compared optimization solvers are KNITRO, FILTERSD, IPOPT and MATLAB FMINCON. Please make sure that you have installed the corresponding solvers on MATLAB for comparison.
+The compared optimization solvers are `KNITRO`, `FILTERSD`, `IPOPT` and MATLAB `FMINCON`. Please make sure that you have installed the corresponding solvers on MATLAB for comparison.
 
 
 ## Samples
 
-See some test examples in the folder 'tests'.
+See some test examples in the folder `tests`.
 
 ## Available Dataset
 Three datasets for AEiCP: `RAND1`, `RAND2` and `NEP`. 
