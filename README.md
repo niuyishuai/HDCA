@@ -117,8 +117,8 @@ $$
     mydca.inertial = true;
 ```
 `mydca.maxiter` is the maximum number of iterations for DCA-type algorithm, `mydca.tolf` and `mydca.tolx` are stopping tolerences such that we will terminate the algorithm if one of the stopping conditions
-$$\Vert x^{k+1}-x^k\Vert\leq \text{mydca.tolx} * (1+\Vert x^{k+1}\Vert) \quad \text{ or } \quad |f(x^{k+1})-f(x^k)|\leq \text{mydca.tolf} * (1+|f(x^{k+1})|)$$
-is verified. In this example, we set `mydca.tolf=0`, `mydca.tolf=0` and `mydca.xopt=200`, which means the algorithm will terminate after 200 iterations.
+$$\Vert X^{k+1}-X^k\Vert\leq \text{mydca.tolx} * (1+\Vert X^{k+1}\Vert) \quad \text{ or } \quad |f_1(X^{k+1})-f_1(X^k)|\leq \text{mydca.tolf} * (1+|f_1(X^{k+1})|)$$
+is verified, where $X^k = (x^k,y^k,w^k,z^k)$. In this example, we set `mydca.tolf=0`, `mydca.tolf=0` and `mydca.xopt=200`, which means the algorithm will terminate after 200 iterations.
 
 Note that three boolean parameters `mydca.linesearch`, `mydca.nesterov`, and `mydca.inertial` are important for choosing different DCA-type algorithms. The settings in `mydca` for each DCA-type algorithm (DCA|ADCA|BDCAe|BDCAa|ADCA|InDCA|HDCA-LI|HDCA-NI) are summarized below:
 |  Algorithms   | Settings  |
