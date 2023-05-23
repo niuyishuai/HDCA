@@ -104,6 +104,7 @@ $$
 	mydca.model='DCP1';	
 	mydca.A=A;
 	mydca.B=B;
+	mydca.verbose=true;
 	mydca.tolf=0;
 	mydca.tolx=0;
 	mydca.maxiter=200;
@@ -131,7 +132,7 @@ Note that three boolean parameters `mydca.linesearch`, `mydca.nesterov`, and `my
 	status=mydca.optimize();
 ```
 
-See more examples in the folder `tests`.
+See more examples and optional settings in the folder `tests`.
 
 ## Available Dataset
 Three datasets for AEiCP: `RAND1`, `RAND2` and `NEP` are available. 
