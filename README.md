@@ -26,6 +26,8 @@ See the article [here](https://arxiv.org/abs/2305.12076) for more details about 
 	title = {Accelerated DC Algorithms for the Asymmetric Eigenvalue Complementarity Problem},
 	author = {Yi-Shuai Niu},	
 	year = {2023},
+	eprint={2305.12076},
+        archivePrefix={arXiv},
 	url = {https://arxiv.org/abs/2305.12076}
 }
 ```
