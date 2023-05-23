@@ -121,20 +121,22 @@ $$\Vert x^{k+1}-x^k\Vert\leq \text{mydca.tolx} * (1+\Vert x^{k+1}\Vert) \quad \t
 is verified. In this example, we set `mydca.tolf=0`, `mydca.tolf=0` and `mydca.xopt=200`, which means the algorithm will terminate after 200 iterations.
 
 Note that three boolean parameters `mydca.linesearch`, `mydca.nesterov`, and `mydca.inertial` are important for choosing different DCA-type algorithms. The settings in `mydca` for each DCA-type algorithm (DCA|ADCA|BDCAe|BDCAa|ADCA|InDCA|HDCA-LI|HDCA-NI) are summarized below:
-  - DCA: linesearch = 0; nesterov = 0; inertial = 0;
-  - BDCAe: linesearch = 1; nesterov = 0; inertial = 0; linesearch_type='exact';
-  - BDCAa: linesearch = 1; nesterov = 0; inertial = 0; linesearch_type='armijo';
-  - ADCA: linesearch = 0; nesterov = 1; inertial = 0; adca_q > 0; restartperiod = inf|>0;
-  - InDCA: linesearch = 0; nesterov = 0; inertial = 1;
-  - HDCA-LI: linesearch = 1; nesterov = 0; inertial = 1; linesearch_type='exact';
-  - HDCA-NI: linesearch = 0; nesterov = 1; inertial = 1; adca_q > 0; restartperiod = inf|>0;
+|  Algorithms   | Settings  |
+|  ----  | ----  |
+| DCA | linesearch = 0; nesterov = 0; inertial = 0;|
+| BDCAe | linesearch = 1; nesterov = 0; inertial = 0; linesearch_type='exact';|
+| BDCAa | linesearch = 1; nesterov = 0; inertial = 0; linesearch_type='armijo';|
+| ADCA  | linesearch = 0; nesterov = 1; inertial = 0; adca_q > 0; restartperiod = inf\|>0;|
+| InDCA | linesearch = 0; nesterov = 0; inertial = 1; |
+| HDCA-LI| linesearch = 1; nesterov = 0; inertial = 1; linesearch_type='exact';|
+| HDCA-NI| linesearch = 0; nesterov = 1; inertial = 1; adca_q > 0; restartperiod = inf\|>0;|
 
 * Optimization
 ``` Matlab 
 	status=mydca.optimize();
 ```
 
-See more examples and optional settings in the folder `tests`.
+See more examples and advanced optional settings in the folder `tests`.
 
 ## Available Dataset
 Three datasets for AEiCP: `RAND1`, `RAND2` and `NEP` are available. 
