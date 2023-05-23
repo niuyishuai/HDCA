@@ -128,7 +128,7 @@ Note that three boolean parameters `mydca.linesearch`, `mydca.nesterov`, and `my
 | BDCAa | linesearch = 1; nesterov = 0; inertial = 0; linesearch_type='armijo';|
 | ADCA  | linesearch = 0; nesterov = 1; inertial = 0; adca_q > 0; restartperiod = inf\|>0;|
 | InDCA | linesearch = 0; nesterov = 0; inertial = 1; |
-| HDCA-LI| linesearch = 1; nesterov = 0; inertial = 1; linesearch_type='exact';|
+| HDCA-LI| linesearch = 1; nesterov = 0; inertial = 1; linesearch_type='exact'\|'armijo';|
 | HDCA-NI| linesearch = 0; nesterov = 1; inertial = 1; adca_q > 0; restartperiod = inf\|>0;|
 
 * Optimization
