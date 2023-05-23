@@ -38,7 +38,7 @@ The compared optimization solvers are `KNITRO`, `FILTERSD`, `IPOPT` and MATLAB `
 
 ## Samples
 
-The Asymmetric Eigenvalue Complementarity Problem (AEiCP) involves finding complementary eigenvectors $x\in \mathbb{R}^n\setminus\{0\}$ and complementary eigenvalues $\lambda\in \mathbb{R}$ that satisfy the following conditions: 
+The Asymmetric Eigenvalue Complementarity Problem (AEiCP) involves finding complementary eigenvectors $x\in \mathbb{R}^n\setminus {0}$ and complementary eigenvalues $\lambda\in \mathbb{R}$ that satisfy the following conditions: 
 $$\begin{cases}
 		w = \lambda B   x - A  x,\\
 		x^{\top}  w = 0,\\
