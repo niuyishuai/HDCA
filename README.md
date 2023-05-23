@@ -101,22 +101,22 @@ $$
 
 * Create and setup a DCA-type algorithm object
 ``` Matlab 
-	mydca = dca(mydcp,x0);
+    mydca = dca(mydcp,x0);
 
-	mydca.model='DCP1';	
-	mydca.A=A;
-	mydca.B=B;
-	mydca.verbose=true;
-	mydca.tolf=0;
-	mydca.tolx=0;
-	mydca.maxiter=200;
+    mydca.model='DCP1';	
+    mydca.A=A;
+    mydca.B=B;
+    mydca.verbose=true;
+    mydca.plot=false;
+    mydca.tolf=0;
+    mydca.tolx=0;
+    mydca.maxiter=200;
 
-	mydca.linesearch = false;
-	mydca.nesterov = true;
-	mydca.inertial = true;
+    mydca.linesearch = false;
+    mydca.nesterov = true;
+    mydca.inertial = true;
 ```
-`mydca.maxiter=200` is the maximum number of iterations for DCA-type algorithm.
-`mydca.tolf` and `mydca.tolx` are stopping tolerences such that we will terminate the algorithm if one of the stopping conditions
+`mydca.maxiter` is the maximum number of iterations for DCA-type algorithm, `mydca.tolf` and `mydca.tolx` are stopping tolerences such that we will terminate the algorithm if one of the stopping conditions
 $$\Vert x^{k+1}-x^k\Vert\leq \text{mydca.tolx} * (1+\Vert x^{k+1}\Vert) \quad \text{ or } \quad |f(x^{k+1})-f(x^k)|\leq \text{mydca.tolf} * (1+|f(x^{k+1})|)$$
 is verified. In this example, we set `mydca.tolf=0`, `mydca.tolf=0` and `mydca.xopt=200`, which means the algorithm will terminate after 200 iterations.
 
@@ -133,7 +133,7 @@ Note that three boolean parameters `mydca.linesearch`, `mydca.nesterov`, and `my
 
 * Optimization
 ``` Matlab 
-	status=mydca.optimize();
+    status=mydca.optimize();
 ```
 
 See more examples and advanced optional settings in the folder `tests`.
